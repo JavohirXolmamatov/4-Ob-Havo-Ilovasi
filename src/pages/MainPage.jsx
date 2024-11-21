@@ -11,7 +11,7 @@ function MainPage() {
     // URL ni faqat bir marta o'rnatish
     if (city && apiKey) {
       setUrl(
-        `http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}&aqi=no`
+        `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}&aqi=no`
       );
     }
   }, [city]); // Faqat city o'zgarganda qayta ishga tushadi
