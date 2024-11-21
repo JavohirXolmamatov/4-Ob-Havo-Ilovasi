@@ -16,7 +16,7 @@ function MainPage() {
     }
   }, [city]); // Faqat city o'zgarganda qayta ishga tushadi
 
-  const { data: data, error, ispending } = useFetch(url);
+  const { data: data, ispending } = useFetch(url);
   useEffect(() => {
     if (data) {
       console.log("Fetched Data:", data); // Faqat haqiqiy ma'lumotlar
